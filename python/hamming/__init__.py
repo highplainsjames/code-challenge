@@ -29,6 +29,7 @@ def calculate_hamming_value(first_strand, second_strand):
 
 # validation methods
 def validate_and_format_strand(strand):
+    # I used python 3, if I had used python 2, I would have used `basestring` for this check
     if not isinstance(strand, str):
         raise ValueError('Invalid Strand Type')
 
